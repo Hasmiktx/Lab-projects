@@ -1,0 +1,17 @@
+.navbar{
+     /* position: fixed;  */
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(4, 23, 40);
+    color: aliceblue;
+    font-size: larger;
+}
+  
+
+.logo{
+    width: 100px;
+    height: 15vh;
+}
