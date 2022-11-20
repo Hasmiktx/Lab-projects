@@ -1,12 +1,22 @@
 import Head from "next/head";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ImageComponent from "../components/image";
+import { fetchImg } from "../constatns/constants";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [image, setImage] = useState(null);
 
+  useEffect(() => {
+    const img = fetchImg();
+    setImage(img);
+  }, []);
+
+  const drawImg = (imgUrl) => {
+    setImage(URL.createObjectURL(imgUrl));
+    localStorage.setItem("image", `${URL.createObjectURL(imgUrl)}`);
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -27,7 +37,7 @@ export default function Home() {
               className={styles.chooseBtn}
               type="file"
               accept="image/png, image/jpeg,image/jpg"
-              onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))}
+              onChange={(e) => drawImg(e.target.files[0])}
             />
           </div>
         )}
