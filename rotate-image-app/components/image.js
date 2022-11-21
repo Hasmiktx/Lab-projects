@@ -32,14 +32,13 @@ const ImageComponent = ({ image, setImage }) => {
 
   return (
     <div className={styles.conteiner}>
-      <div className={styles.imageDiv}>
-        <img
-          className={styles.image}
-          alt="oops,please remove and select image again"
-          src={image}
-          style={{ transform: `rotate(${degree}deg)` }}
-        />
-      </div>
+      <img
+        className={styles.image}
+        alt="oops,please remove and select image again"
+        src={image}
+        style={{ transform: `rotate(${degree}deg)` }}
+      />
+
       <div
         style={{
           display: "flex",
