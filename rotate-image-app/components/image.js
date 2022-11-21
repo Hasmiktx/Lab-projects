@@ -5,7 +5,7 @@ import styles from "../styles/ImageComponent.module.css";
 const ImageComponent = ({ image, setImage }) => {
   const [degree, setDegree] = useState(0);
   const [angle, setAngle] = useState(0);
-  // console.log(degree, "degree");
+  console.log(degree, "degree");
 
   useEffect(() => {
     let timerId = setTimeout(() => {

@@ -10,6 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     const img = fetchImg();
+
     setImage(img);
   }, []);
 
