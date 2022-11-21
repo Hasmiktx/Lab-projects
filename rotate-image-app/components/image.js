@@ -5,11 +5,11 @@ import styles from "../styles/ImageComponent.module.css";
 const ImageComponent = ({ image, setImage }) => {
   const [degree, setDegree] = useState(0);
   const [angle, setAngle] = useState(0);
-  console.log(degree, "degree");
+  // console.log(degree, "degree");
 
   useEffect(() => {
     let timerId = setTimeout(() => {
-      setDegree(+angle);
+      setDegree(angle % 360);
     }, 1000);
     return () => {
       clearTimeout(timerId);
@@ -18,9 +18,10 @@ const ImageComponent = ({ image, setImage }) => {
 
   const rotateImg = (direction) => {
     if (direction === RIGHT) {
-      degree >= 270 ? setDegree(0) : setDegree(degree + rightAngle);
+      // console.log(angle, "angle");
+      setDegree((degree + rightAngle) % 360);
     } else {
-      degree <= 0 ? setDegree(270) : setDegree(degree - rightAngle);
+      setDegree((degree - rightAngle) % 360);
     }
   };
 
@@ -59,10 +60,10 @@ const ImageComponent = ({ image, setImage }) => {
       <span>Choose yourself</span>
       <input
         type="number"
-        min="0"
+        min="-360"
         max="360"
         value={angle}
-        onChange={(e) => setAngle(e.target.value)}
+        onChange={(e) => setAngle(+e.target.value)}
       />
     </div>
   );
