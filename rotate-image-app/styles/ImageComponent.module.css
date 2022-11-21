@@ -8,10 +8,11 @@
 }
 
 .image{
-    width: 350px;
-    height: 300px;
+   max-width:35%;
+    height: auto;
     margin-top: 15vh;
     margin-bottom: 15vh;
+    margin-left: 20vw;
     
     
   }
