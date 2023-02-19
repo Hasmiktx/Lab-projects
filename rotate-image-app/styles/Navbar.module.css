@@ -1,5 +1,6 @@
 .navbar{
-     /* position: fixed;   */
+     position: fixed;  
+     z-index: 5;
     width: 100vw;
     height: 15vh;
     display: flex;

@@ -7,6 +7,7 @@ const About = () => {
 
         alignItems: "center",
         maxWidth: "50vw",
+        paddingTop: "10rem",
         margin: "auto",
         marginTop: "10vh",
         marginBottom: "10vh",
