@@ -1,0 +1,18 @@
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #261254;
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #ffffff;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 3rem;
+}
+.chat:hover {
+    cursor: pointer;
+    background-color: #41218a;
+}

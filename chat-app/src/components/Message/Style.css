@@ -1,0 +1,35 @@
+.message {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2rem;
+    min-width: 40rem;
+    min-height: 25rem;
+
+    font-size: larger;
+}
+img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.chat_div {
+    display: flex;
+    margin-top: 2rem;
+}
+.input {
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    height: 10rem;
+    border: 1px solid #8c5df9;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.button {
+    background-color: #261254;
+    color: #ffffff;
+}
+.button:hover {
+    background-color: #41218a;
+}
