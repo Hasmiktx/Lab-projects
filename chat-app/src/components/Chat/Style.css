@@ -9,10 +9,13 @@
 
     color: #ffffff;
     width: 30rem;
-    height: 5rem;
+    min-height: 5rem;
+    max-height: 10rem;
     border-radius: 3rem;
+    /* resize: vertical;
+    cursor: n-resize; */
 }
 .chat:hover {
-    cursor: pointer;
     background-color: #41218a;
+    cursor: pointer;
 }

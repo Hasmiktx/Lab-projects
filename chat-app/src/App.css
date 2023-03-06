@@ -1,17 +1,19 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 10rem;
-    text-align: center;
+    margin-left: 25vw;
 }
 
 .container {
-    min-height: 60vh;
+    position: absolute;
+    bottom: 0;
 
+    background-color: rgb(234, 230, 224);
+    min-height: 12vh;
+    min-width: 40rem;
+    max-width: 50rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-end;
-    border: 1px solid #8c5df9;
+
     border-radius: 2rem;
 }

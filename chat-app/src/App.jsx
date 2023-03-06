@@ -4,7 +4,7 @@ import Chat from './components/Chat/Chat';
 import { createContext, useState } from 'react';
 export const ShowContext = createContext();
 function App() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const handleChange = () => setIsOpen(!isOpen);
 
     return (

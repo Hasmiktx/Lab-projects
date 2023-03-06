@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     min-width: 40rem;
     min-height: 25rem;
 
@@ -15,21 +15,31 @@ img {
 }
 .chat_div {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .input {
     display: flex;
     align-items: center;
     width: 25rem;
-    height: 10rem;
+    height: 5rem;
     border: 1px solid #8c5df9;
     border-radius: 1rem;
     margin: 2rem;
 }
 .button {
+    width: 10rem;
+    height: 3rem;
     background-color: #261254;
     color: #ffffff;
+    border-radius: 3rem;
 }
 .button:hover {
     background-color: #41218a;
+}
+.text {
+    display: flex;
+    min-width: 20rem;
+    min-height: 5rem;
+    background-color: rgba(233, 249, 237, 0.799);
+    border-radius: 3rem;
 }

@@ -4,7 +4,11 @@ import './Style.css';
 const Chat = () => {
     const handleChange = useContext(ShowContext);
     return (
-        <div className="chat" onClick={handleChange}>
+        <div
+            className="chat"
+            onClick={handleChange}
+            onResize={console.log('resize')}
+        >
             Chat
         </div>
     );

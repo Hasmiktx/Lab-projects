@@ -12,13 +12,17 @@ const Message = ({ isOpen }) => {
         <div className="message" style={{ display: isOpen ? 'flex' : 'none' }}>
             <div className="chat_div">
                 <img src="/img/avatar_1.png" />
-                <p>{text}</p>
+                <div className="text">
+                    <p>{text}</p>
+                </div>
             </div>
             <div className="chat_div">
-                <p>{text}</p>
+                <div className="text">
+                    <p>{text}</p>
+                </div>
                 <img src="/img/avatar_2.png" />
             </div>
-            <input
+            <textarea
                 className="input"
                 type="text"
                 placeholder="type your message"
