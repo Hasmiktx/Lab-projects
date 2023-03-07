@@ -1,0 +1,8 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(25, 33, 28);
+}
