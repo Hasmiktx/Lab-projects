@@ -1,0 +1,32 @@
+.tooltip_div {
+    position: relative;
+    display: inline-block;
+}
+.tooltip_text {
+    visibility: hidden;
+    position: absolute;
+    width: 8rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.tooltip_div:hover .tooltip_text {
+    visibility: visible;
+}
+
+.top {
+    bottom: 105%;
+}
+
+.left {
+    right: 105%;
+    bottom: 30%;
+}
+.right {
+    left: 105%;
+    bottom: 30%;
+}
+
+.bottom {
+    top: 105%;
+}
