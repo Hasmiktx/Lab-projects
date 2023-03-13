@@ -40,6 +40,7 @@ img {
     display: flex;
     min-width: 20rem;
     min-height: 5rem;
+
     background-color: rgba(233, 249, 237, 0.799);
     border-radius: 3rem;
 }
