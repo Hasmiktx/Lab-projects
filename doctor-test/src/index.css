@@ -1,0 +1,138 @@
+.select-container {
+  width: 1512px;
+  height: 998px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-contaeiner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  width: 90px;
+  height: 90px;
+  background: #3E8DC9;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  width: 1372px;
+  height: 658px;
+  border: 1px solid black;
+  display: flex;
+  padding: 10rem;
+}
+
+.symptom-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+
+.error {
+  color: red;
+}
+
+.input-div {
+  display: flex;
+}
+.input-div input {
+  width: 30rem;
+  height: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  border-right: 0;
+}
+.input-div button {
+  width: 3rem;
+  height: 3rem;
+  background-color: #3E8DC9;
+  color: aliceblue;
+  font-size: larger;
+  border-radius: 0 1rem 1rem 0;
+  border-left: 0;
+  cursor: pointer;
+}
+.input-div button:hover {
+  background-color: #60ace7;
+}
+
+.dataResult {
+  margin-top: 2rem;
+  width: 320px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgb(218, 217, 217);
+  margin-top: 1rem;
+}
+.dataItem p {
+  margin-left: 2rem;
+}
+.dataItem a {
+  text-decoration: none;
+}
+.dataItem a:hover {
+  background-color: lightgrey;
+}
+
+.select {
+  width: 20rem;
+  height: 10rem;
+}
+
+.btn {
+  background-color: green;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=index.css.map */

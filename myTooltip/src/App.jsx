@@ -5,30 +5,31 @@ import GridComp from './components/Grid/Grid';
 
 import MyTooltip from './components/MyTooltip/MyTooltip';
 
-// function App() {
-//     return (
-//         <div className="App">
-//             <h2 className="header">The Tooltip Component</h2>
-//             <MyTooltip
-//                 text="Here I Am"
-//                 position="left"
-//                 color="black"
-//                 backgroundColor="lawngreen"
-//                 fontSize={20}
-//             >
-//                 <h3>Hover on Me</h3>
-//             </MyTooltip>
+function App() {
+    return (
+        <div className="App">
+            <h2 className="header">The Tooltip Component</h2>
+            <MyTooltip
+                text="Here I Am"
+                position="left"
+                color="black"
+                backgroundColor="lawngreen"
+                fontSize={20}
+            >
+                <h3>Hover on Me</h3>
+            </MyTooltip>
+            <GridComp/>
             
-//         </div>
-//     );
-// }
+        </div>
+    );
+}
 
-function App(){
+// function App(){
    
-    return(
-    <div className='App'>
-     <GridComp/>
-   </div> 
-    )
-    }
+//     return(
+//     <div className='App'>
+//      <GridComp/>
+//    </div> 
+//     )
+//     }
  export default App;

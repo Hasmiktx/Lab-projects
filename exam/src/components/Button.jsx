@@ -1,8 +1,8 @@
 import "./Style.css"
 
 const Button=({width,height,variant,text})=>{
-   return <Button className={`${variant}`} style={{width:`${width}px`, height:`${height}px`}} >
-    {text}</Button>
+   return <button className={`${variant}`} style={{width:`${width}px`, height:`${height}px`}} >
+    {text}</button>
 
     
 }
